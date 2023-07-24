@@ -1,0 +1,15 @@
+{% extends "template.html" %}
+{% block content %}
+<div style="background-color:#949495; margin:10px;padding:10px">
+    <h1 style="display:inline">富樫研究室　新規追加</h1>
+    <a href="/" style="margin:20px; display:inline">
+        <button style="background-color:silver;font-size:20px;">戻る</button>
+    </a>
+</div>
+    <div>
+        <form action="/input" method="POST" style="display:inline">
+            <a>名前:<input type="text" name="name" value=""></a>
+            <input type="submit" value="追加">
+        </form>
+    </div>
+{% endblock %}
