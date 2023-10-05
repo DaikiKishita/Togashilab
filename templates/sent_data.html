@@ -1,0 +1,23 @@
+{% extends "template.html" %}
+{% block content%}
+<div style="background-color:#949495; margin:10px;padding:10px;">
+    <a href="/"" style="margin:20px; display:inline;"">
+        <button style="background-color:silver;font-size:20px;">戻る</button>
+    </a>
+</div>
+<form action="/sent_data" method="POST">
+<div style="text-align:center">
+    <p>{{example}}</p>
+    <p>Year:<input type="number" name="year" required>年</p>
+    <p>Month:<input type="number" name="month" required>月</p>
+    <p>OTP:<input type="number" name="OTP" required></p>
+    <p><input type="submit" value="転送"></p>
+    <table border="1" style="margin:auto">
+        <tr><th>名前</th><th>総合滞在時間</th></tr>
+            {% for i in range(lens) %}
+            <tr><td>{{names[i]}}</td><td>{{times[i]}}</td></tr>
+            {% endfor %}
+    </table>
+</form>
+</div>
+{% endblock %}

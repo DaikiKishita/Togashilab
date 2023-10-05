@@ -5,13 +5,18 @@
 <a href="/input" style="margin:20px; display:inline;">
     <button style="background-color:silver;font-size:20px;">新規追加</button>
 </a>
-<a href="/delete" style="margin:20px; display:inline"> 
-    <button style="background-color:silver;font-size:20px;">削除</button>
+<a href="/detail" style="margin:20px; display:inline"> 
+    <button style="background-color:silver;font-size:20px;">編集</button>
 </a>
 <a href="/graph" style="display:inline; margin:20px">
     <button style="background-color:silver;font-size:20px;">グラフ表示</button>
 </a>
+<table>
+    <tr><td style="background-color:red"></td><td style="background-color:green"></td><td style="background-color:silver"></td></tr>
+    <tr><td style="background-color:red">研究室外</td><td style="background-color:green">在研中</td><td style="background-color:silver">情報なし</td></tr>
+</table>
 </div>
+
 <table border='0' style='margin:auto'>
     {{info | safe}}
 </form>

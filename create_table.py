@@ -4,7 +4,7 @@ dbname="static/Users.db"
 conn=sq.connect(dbname)
 cur=conn.cursor()
 
-cur.execute('CREATE TABLE Users(id INTEGER PRIMARY KEY AUTOINCREMENT,name STRING unique,color STRING,timer time)')
+cur.execute('CREATE TABLE Monthliy(id INTEGER PRIMARY KEY AUTOINCREMENT,name STRING,maxtimer time,Year Integer,month Integer)')
 
 conn.commit()
 cur.close()

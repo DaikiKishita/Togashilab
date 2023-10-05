@@ -6,7 +6,12 @@
         <button style="background-color:silver;font-size:20px;">戻る</button>
     </a>
 </div>
-<div style="margin:auto">
+<div>
     <img src="images/graph.jpg"  width="640" height="480">
+    <ul>
+        {% for i in range(lens) %}
+            <li><p><img src="images/{{ranking[i][0]}}.png">:{{ranking[i][1]}} {{timer[i]}}</p>
+        {% endfor %}
+    </ul>
 </div>
 {% endblock %}
