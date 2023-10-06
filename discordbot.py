@@ -1,10 +1,14 @@
 import discord
 from discord import app_commands
 import sqlite3 as sq
+import os
+from dotenv import load_dotenv
+
+load_dotenv('.env')
 
 #============Channel ID==================
-To="1133949816104308838"
-TOKEN="MTEzMDQ1OTE4ODU5ODkzOTc4OQ.GMLDum.eQY08W_3NSBHCQGIXGjh3BoU1w0UEGQwTuhvYI"
+To=os.getenv("ChannelId")
+TOKEN=os.getenv("TOKEN")
 #========設定=================
 channelid=To
 intents=discord.Intents.default()
