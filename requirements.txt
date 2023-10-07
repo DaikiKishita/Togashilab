@@ -1,2 +1,5 @@
 flask==2.2.2
 matplotlib
+numpy
+discord
+python-dotenv
